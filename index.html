@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Shelter</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
+</head>
+
+<body>
+    <div class="top">
+        <div class="nav">
+            <h1><img src="assets/heart-light.png" alt="white heart symbol">Pet Shelter</h1>
+            <ul class="links">
+                <li>Find a Pet</li>
+                <li>About</li>
+                <li><button class="btnDonate"><strong>Donate</strong></button></li>
+            </ul>
+        </div>
+        <div class="nav">
+            <form>
+                <img src="assets/paw-light.png" alt="white paw print symbol">
+                <label for="pets">I'm looking for a...</label>
+                <select name="pets" id="pets">
+                    <option value="any">Any Pet</option>
+                    <option value="cat">Cat</option>
+                    <option value="dog">Dog</option>
+                </select>
+            </form>
+            <form>
+                <img src="assets/pin-light.png" alt="white map pin symbol">
+                <label for="location">in or near...</label>
+                <input type="text" name="location" id="location" placeholder="City or Zip Code" />
+            </form>
+            <button class="btnFriend">Find my new best friend</button>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="userFeed">
+            <div class="feedContainer">
+                <div class="feedHead">
+                    <h1>Pepper</h1>
+                    <h3><span class="likeNum" id="likeOne">3</span> pettings(s)</h3>
+                    <button class="likeButton" id="buttonOne" onclick="addLikeOne()">Pet Pepper</button>
+                </div>
+                <div class="body">
+                    <p>Pepper is a slightly shy grey tabby, but she really loves showing her human affection.</p>
+                </div>
+            </div>
+            <div class="feedContainer">
+                <div class="feedHead">
+                    <h1>Bruce</h1>
+                    <h3><span class="likeNum" id="likeTwo">5</span> pettings(s)</h3>
+                    <button class="likeButton" id="buttonTwo" onclick="addLikeTwo()">Pet Bruce</button>
+                </div>
+                <div class="body">
+                    <p>Bruce is a loyal companion. He loves long walks and cold weather.</p>
+                </div>
+            </div>
+            <div class="feedContainer">
+                <div class="feedHead">
+                    <h1>Oscar</h1>
+                    <h3><span class="likeNum" id="likeThree">8</span> pettings(s)</h3>
+                    <button class="likeButton" id="buttonThree" onclick="addLikeThree()">Pet Oscar</button>
+                </div>
+                <div class="body">
+                    <p>Oscar is bright, energetic, and friendly. He is looking for a good home.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
